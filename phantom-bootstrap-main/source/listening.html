@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+
+  <!-- ** Basic Page Needs ** -->
+  <meta charset="utf-8">
+  <title>Phantom - Bootstrap Portfolio Template</title>
+
+  <!-- ** Mobile Specific Metas ** -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Portfolio HTML Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Themefisher Html5 Portfolio Template v1.0">
+
+  <!-- Essential Stylesheets -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i|Open+Sans:400,600,700,800">
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/animate.css">
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
+  <link rel="stylesheet" href="plugins/themefisher-fonts/css/themefisher-fonts.min.css">  
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Theme Stylesheet -->
+  <link rel="stylesheet" href="#" id="color-changer">
+  
+  <!--Favicon-->
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+</head>
+<body><!-- set class="dark" on body tag for DARK-THEME -->
+  <div class="preloader">
+    <div class="loading-mask"></div>
+    <div class="loading-mask"></div>
+    <div class="loading-mask"></div>
+    <div class="loading-mask"></div>
+    <div class="loading-mask"></div>
+  </div>
+
+  <div class="preview-wrapper">
+    <div class="switcher-head">
+      <span>Style Switcher</span>
+      <div class="switcher-trigger tf-tools"></div>
+    </div>
+
+    <div class="switcher-body">
+      <h4>Choose Color:</h4>
+      <ul class="color-options list-none">
+        <li class="c0" data-color="red" title="Default">Default</li>
+        <li class="c1" data-color="blue" title="Red">Red</li>
+        <li class="c2" data-color="green" title="Green">Green</li>
+        <li class="c3" data-color="yellow" title="Blue">Blue</li>
+      </ul>
+    </div>
+  </div>
+
+<main class="site-wrapper">
+    
+  <div class="pt-table">
+    <div class="pt-tablecell page-works relative">
+      <!-- .close -->
+      <a href="./" class="page-close"><i class="tf-ion-close"></i></a>
+      <!-- /.close -->
+
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+            <div class="page-title text-center">
+              <h2><span class="primary">Listening</span> <span class="title-bg"></span></h2>
+              <p>Here is a sample of what I've been listening to lately. Please feel free to reach out to discuss any music or podcasts that pique your interest.</p>
+            </div>
+          </div>
+        </div> <!-- /.row -->
+
+        <div class="container">
+            <div class = "row">
+                <h>Podcast Episodes</h3>
+            </div>
+        </div>
+        <div class="episodes">
+            <button class="episode" data-spotify-id="spotify:episode:7A5BevPKMCg7CMtukkd1QW">
+              This American Life
+            </button>
+            <button class="episode" data-spotify-id="spotify:episode:4hwxCcf1rWl8pMyNLKJQan">
+              How I Built This
+            </button>
+            <button class="episode" data-spotify-id="spotify:episode:3CemjtNlEOmotGXUclNtN7">
+              Hidden Brain
+            </button>
+          </div>
+        
+          <div id="embed-iframe"></div>
+          <script src="https://open.spotify.com/embed/iframe-api/v1" async>
+          </script>
+          <script type="text/javascript">
+            window.onSpotifyIframeApiReady = (IFrameAPI) => {
+              const element = document.getElementById('embed-iframe');
+              const options = {
+                width: '100%',
+                height: '160',
+                uri: 'spotify:episode:7A5BevPKMCg7CMtukkd1QW'
+              };
+              const callback = (EmbedController) => {
+                document.querySelectorAll('.episode').forEach(
+                  episode => {
+                    episode.addEventListener('click', () => {
+                      EmbedController.loadUri(episode.dataset.spotifyId)
+                    });
+                  })
+              };
+              IFrameAPI.createController(element, options, callback);
+            };
+          </script>
+          <div class="container">
+            <div class = "row">
+                <h>Music</h3>
+            </div>
+        </div>
+
+        <div class="row isotope-gutter">
+          <div class="col-xs-12 col-sm-6 col-md-4 Photography">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4Goj7amQLl2PiPYaiB0VlV?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 Surfboard-Shaping">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4r1IFv0DCJ6CQsfOhQPTES?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 Music">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5pttxADQauH42FAnTiHSh8?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 Photography">
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7aFrMWov54kN7d8lSllHbY?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> 
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 Surfboard-Shaping">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1SIXMGcsAeA6sNxaY1EG3O?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 Photography">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4ebM2vw141IEJYU4AgkDvB?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 Music">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2Xb6wJYGi0QXwURw5WWvI5?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 Music">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4CjEkkRMMKY2ROy21bFNrc?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 Music">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3ven4ZKSspshBwiLMMibEa?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+        </div> <!-- /.row -->
+      </div> <!-- /.container -->
+
+      <nav class="page-nav clear">
+
+  <!-- /.page-nav -->
+</nav>
+      <!-- /.container -->
+
+    </div> <!-- /.pt-tablecell -->
+  </div> <!-- /.pt-table -->
+</main> <!-- /.site-wrapper -->
+
+
+<!-- 
+Essential Scripts
+=====================================-->
+<script src="plugins/jquery-2.2.4.min.js"></script>
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<script src="plugins/jquery.nicescroll.min.js"></script>
+<script src="plugins/isotope/isotope.pkgd.min.js"></script>
+<script src="plugins/slick/slick.min.js"></script>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
