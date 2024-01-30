@@ -1,0 +1,1 @@
+web: cd phantom-bootstrap-main && gulp
