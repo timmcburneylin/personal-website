@@ -5,7 +5,8 @@
   "author": "Timothy McBurney-Lin",
   "license": "MIT",
   "engines": {
-    "node": "14.0"
+    "node": "14.0",
+    "npm": "6.0"
   },
   "scripts": {
     "dev": "gulp",
