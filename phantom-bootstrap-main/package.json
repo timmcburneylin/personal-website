@@ -1,9 +1,12 @@
 {
-  "name": "phantom",
+  "name": "timmcburneylin",
   "version": "1.0.0",
-  "description": "phantom free bootstrap portfolio template",
-  "author": "Themefisher",
+  "description": "my personal website",
+  "author": "Timothy McBurney-Lin",
   "license": "MIT",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "dev": "gulp",
     "build": "gulp build"
